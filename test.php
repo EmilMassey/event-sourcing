@@ -136,7 +136,7 @@ class Test
         $this->assertEquals(250, $account->balance);
     }
 
-    public function assertEquals($expected, $actual): bool
+    private function assertEquals($expected, $actual): bool
     {
         $this->testsExecuted++;
 
@@ -153,7 +153,6 @@ class Test
     }
 }
 
-$successful = 0;
 $test = new Test();
 $test->testOpensAccount();
 $test->testDeposit();
